@@ -45,5 +45,5 @@ if st.button('Show Recommendation'):
     for idx, col in enumerate(cols):
         with col:
             st.image(recommended_movie_posters[idx])
-            st.text(recommended_movie_names[idx])
+            st.markdown(f"<div style='text-align: center; word-wrap: break-word;'>{recommended_movie_names[idx]}</div>", unsafe_allow_html=True)
             
